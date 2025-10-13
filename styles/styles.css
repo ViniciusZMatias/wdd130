@@ -3,6 +3,13 @@ main {
   max-width: 840px;
 }
 
+main img {
+  width: 150px;
+  height: auto;
+}
+
+p { padding: 0;}
+
 aside {
   width: 20rem;
   margin: 1rem auto;
@@ -17,15 +24,6 @@ aside img {
   width: 200px;
   height: auto;
 }
-
-main img {
-  width: 150px;
-  height: auto;
-}
-
-
-p { padding: 0;}
-
 
 footer { 
   margin-top: 15px;
