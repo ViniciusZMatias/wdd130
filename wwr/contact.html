@@ -5,72 +5,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Discover the thrill of white-water rafting with our company. Adventure, safety, and unforgettable memories await you.">
+    content="Contact Rafting Travel for questions, bookings, or suggestions. Reach us by phone, email, or through our contact form.">
   <meta name="author" content="Vinicius Matias">
-  <title>Contact Us - Rafting Company</title>
+  <title>Contact Us - Rafting Travel</title>
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
   <header>
-    <img src="images/logo.png" alt="Rafting Company Logo">
+    <img src="images/logo.png" alt="Rafting Company Logo" class="logo">
     <nav>
-      <a href="./">Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
-      <a class="current" href="contact.html">Contact Us</a>
+      <a href="contact.html" class="current">Contact Us</a>
     </nav>
   </header>
   <main>
     <h1>Contact Us</h1>
-
-    <div class="contact-info">
-      <h2>Send Us a Message</h2>
-      <p>Rafting Travel</p>
-      <p>Phone: +51 984 276 543</p>
-      <p>Email: <a href="mailto:info.raftingtravel@gmail.com">info.raftingtravel@gmail.com</a></p>
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84987.40446668556!2d-77.90936640912804!3d-4.59582562843328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91c98b11b0f61d25%3A0x34fbd817b3ee81db!2sSanta%20Maria%20De%20Nieva!5e0!3m2!1sen!2sbr!4v1760662961294!5m2!1sen!2sbr"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+    <div class="contact-container">
+      <section class="contact-info">
+        <h2>Our Information</h2>
+        <p><strong>Rafting Travel</strong></p>
+        <p>Phone: <a href="tel:+51984276543">+51 984 276 543</a></p>
+        <p>Email: <a href="mailto:info.raftingtravel@gmail.com">info.raftingtravel@gmail.com</a></p>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84987.40446668556!2d-77.90936640912804!3d-4.59582562843328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91c98b11b0f61d25%3A0x34fbd817b3ee81db!2sSanta%20Maria%20De%20Nieva!5e0!3m2!1sen!2sbr!4v1760662961294!5m2!1sen!2sbr"
+            width="600" height="450" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+      <section class="contact-form-section">
+        <h2>Send Us a Message</h2>
+        <form action="/submit-form" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="user_email" required>
+          </div>
+          <fieldset class="form-group">
+            <legend>Purpose of Message:</legend>
+            <label><input type="radio" name="purpose" value="general_inquiry" required> General Inquiry</label>
+            <label><input type="radio" name="purpose" value="reservation_question"> Reservation Question</label>
+            <label><input type="radio" name="purpose" value="website_suggestion"> Website Suggestion</label>
+          </fieldset>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="user_message" rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <label><input type="checkbox" name="subscribe_newsletter"> Please subscribe me to the monthly
+              newsletter</label>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
     </div>
-
-    <section class="contact-form-section">
-      <h2>Contact Form</h2>
-      <form action="/submit-form" method="post">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="user_email" required>
-        </div>
-        <div class="form-group">
-          <label for="purpose">Purpose of message:</label>
-          <input type="radio" id="inquiry" name="purpose" value="general_inquiry" required>
-          <label for="inquiry">General Inquiry</label>
-          <input type="radio" id="reservation" name="purpose" value="reservation_question">
-          <label for="reservation">Reservation Question</label>
-          <input type="radio" id="suggestion" name="purpose" value="website_suggestion">
-          <label for="suggestion">Website Suggestion</label>
-        </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="user_message" rows="5" required></textarea>
-        </div>
-        <div class="form-group">
-          <input type="checkbox" id="subscribe" name="subscribe_newsletter">
-          <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-        </div>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-
     <section class="our-team-section">
-      <h2>Our Team</h2>
+      <h2>Meet Our Team</h2>
       <div class="team-members">
         <figure>
           <img src="images/team-member1.jpg" alt="Team Member 1">
@@ -78,7 +74,7 @@
         </figure>
         <figure>
           <img src="images/team-member2.jpg" alt="Team Member 2">
-          <figcaption>Jane Smith - Lead Guide</figcaption>
+          <figcaption>Adam Smith - Lead Guide</figcaption>
         </figure>
         <figure>
           <img src="images/team-member3.jpg" alt="Team Member 3">
@@ -86,20 +82,13 @@
         </figure>
       </div>
     </section>
-
   </main>
   <footer>
-    <p>&copy; 2025 Rafting Travel. All rights reserved. Developed by Vinicius Matias.</p>
+    <p>&copy; 2025 💦 Rafting Travel 💦 Vinicius Matias</p>
     <nav class="socialmedia">
-      <a href="https://facebook.com">
-        <img src="images/facebook.svg" alt="Facebook Icon">
-      </a>
-      <a href="https://linkedin.com">
-        <img src="images/linkedin.svg" alt="LinkedIn Icon">
-      </a>
-      <a href="https://instagram.com">
-        <img src="images/instagram.svg" alt="Instagram Icon">
-      </a>
+      <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
     </nav>
   </footer>
 </body>
